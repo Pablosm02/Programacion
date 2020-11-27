@@ -3,30 +3,36 @@ package U3.T3;
 import java.util.Scanner;
 
 public class ex5 {
+    //Leer una serie de 6 enteros que se almacenarán en una tabla que hay que ordenar y
+    // mostrar. Hacer lo mismo con otra serie de 6 enteros. A continuación, fusionar las
+    // dos tablas en una tercera, de forma que los 12 números sigan ordenados. Fusionar
+    // significa copiar en el orden correcto para que los datos resultantes continúen
+    // ordenados sin necesidad de volver a realizar una ordenación
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Introduzca seis digitos para la primera tabla");
-        int array1[]=new int[7];
+        Scanner sc = new Scanner(System.in);
         int i;
-        for (i=1;i<=6;i++){
-            array1[i]=sc.nextInt();
+        System.out.println("Introduzca los 6 primeos datos por favor:");
+        int array[]=new int [6];
+        for (i=0;i<=5 ;i++){
+            array[i]=sc.nextInt();
+
         }
-        System.out.println("Introduzca seis digitos para la segunda tabla");
-        int array2[]=new int[7];
+        System.out.println("introduzca los 6 datos restantes:");
+        int array2[]=new int [6];
         int t;
-        for(t=1;t<=6;t++){
+        for (t=0;t<=5;t++){
             array2[t]=sc.nextInt();
         }
-        int z;
+        String s="";
+        int m;
         int u;
-        String s1="";
-        String s2="";
-        for (z=1;z<=6;z++){
-            s1= s1+array1[z]+" ";
+        for (m=0;m<=5;m++){
+            s=s+" "+array[m];
         }
-        for (u=1;u<=6;u++){
-            s2=s2+array2[u]+" ";
+        for (u=0;u<=5;u++){
+            s=s+" "+array2[u];
         }
-        System.out.println(s1+s2);
+
+        System.out.println(s);
     }
 }

@@ -92,7 +92,7 @@ public class ex4 {
             }
 
         }
-        System.out.print("¡¡¡ENHORABUENA!!!");
+        System.out.print("¡¡¡ENHORABUENA!!! Has adivinado la clave");
 
     }
 }
