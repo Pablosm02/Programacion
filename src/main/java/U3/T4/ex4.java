@@ -113,7 +113,7 @@ public class ex4 {
             }
 
         }
-        System.out.println("otro");
+
         cont=Integer.parseInt(numpos);
         //arriba derecha
 
@@ -157,7 +157,7 @@ public class ex4 {
             }
 
         }
-        System.out.println("otro");
+
         cont=Integer.parseInt(numpos);
         //abajo izq
 
@@ -200,7 +200,7 @@ public class ex4 {
                 posibilidades=posibilidades+("h"+cont+" ");
             }
         }
-        System.out.println("otro");
+
         cont=Integer.parseInt(numpos);
 
 
