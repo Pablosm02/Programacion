@@ -3,9 +3,14 @@ package U3.T4;
 
 import com.sun.jdi.IntegerValue;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
+
 public class ex4 {
+
+
     public static void main(String[] args) {
         String posibilidades="";
         Scanner sc = new Scanner(System.in);
@@ -28,8 +33,12 @@ public class ex4 {
             }
             s1 = "";
         }
+        for (int j = 0; j < tablero.length; j++) {
+            System.out.println(Arrays.toString(tablero[j]));
+        }
 
-        System.out.println("introduce el lugae en el que se encuetnra el alfil");
+
+        System.out.println("introduce el lugar en el que se encuetnra el alfil");
         String pos = sc.nextLine();
         int h;
         int g;
